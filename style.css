@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html body {
+    height: 100vh;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 20px;
+    color: #EC4C4C;
+}
+
+.header {
+    width: 100%;
+    height: 120px;
+    position: sticky;
+    top: 0;
+    background: #eee;
+    z-index: 100;
+}
+
+.logo {
+    display: inline-block;
+    margin-top: -30px;
+    margin-left: 30px;
+}
+
+.nav-bar {
+    float: right;
+    width: 400px;
+    margin: 40px 100px 0 auto;
+}
+
+.nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav-bar a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+
+.nav-bar a:hover {
+    color: #EC4C4C;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btn-form {
+    height: 40px;
+    width: 150px;
+    border-radius: 4px;
+    background: #EC4C4C;
+    font-size: 1.15rem;
+    color: #000;
+    cursor: pointer;
+}
+
+.btn-form:hover {
+    background: transparent;
+    color: #333;
+}
+
+#email {
+    width: 300px;
+    height: 25px;
+    padding-left: 5px;
+    margin: 30px;
+}
+
+.features {
+    margin: 50px 0;
+    background-image: url('https://backgroundcheckall.com/wp-content/uploads/2018/10/skateboard-desktop-background-3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px 0;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.feature-container h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.feature-container p {
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.icon {
+    float: left;
+    margin-right: 80px;
+    font-size: 3rem;
+    color: #EC4C4C;
+}
+
+.how-it-works {
+    margin: 60px;
+}
+
+h3 {
+    text-align: center;
+    margin: 50px;
+    font-size: 2rem;
+    color: #EC4C4C;
+}
+
+#video {
+    display: block;
+    margin: 0 auto;
+}
+
+.pricing {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #EC4C4C;
+}
+
+.box {
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: 3px 5px 8px #333;
+    margin: 50px;
+    width: 250px;
+    height: 320px;
+    background: #fff;
+}
+
+.box h4 {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.25rem;
+    background-color: #eee;
+}
+
+.box p {
+    text-align: center;
+    padding: 10px;
+    font-size: 2rem;
+    color: #EC4C4C;
+}
+
+.box ul {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.box li {
+    margin: 10px;
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+.btn {
+    display: block;
+    margin: 0 auto;
+    height: 35px;
+    width: 120px;
+    background: transparent;
+    font-size: 1.125rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #fff;
+    background: #EC4C4C;
+}
+
+.footer {
+    background: #eee;
+    display: block;
+    margin: 0 auto;
+    width: 970px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer ul {
+    display: flex;
+    margin: 20px;
+}
+
+.footer li {
+    margin-right: 20px;
+    list-style: none;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.footer a:hover {
+    color: #EC4C4C;
+}
+
+.copy {
+    color: #555;
+    margin: 20px;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .header {
+        height: 35%;
+    }
+    .logo {
+        display: block;
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    .nav-bar {
+        margin: 0;
+    }
+
+    .nav-bar ul {
+       display: inline-block;
+       margin: 0 auto;
+       text-align: center;
+    }
+
+    .nav-bar li {
+        margin: 5px;
+    }
+    .nav-bar a {
+        font-size: 1.2rem;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    .box {
+        margin: 20px;
+    }
+
+}
